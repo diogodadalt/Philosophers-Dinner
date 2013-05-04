@@ -1,8 +1,8 @@
 sem: cs
-	gcc -o semaphore semaphores.c error_handling.c
+	gcc -o semaphore semaphores.c error_handling.c random_gen.c -lpthread
 
 cond: cc
-	gcc -o conditional conditional_variables.c error_handling.c
+	gcc -o conditional conditional_variables.c error_handling.c random_gen.c -lpthread
 
 cs:
 	@rm semaphore || true
