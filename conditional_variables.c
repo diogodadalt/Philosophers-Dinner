@@ -132,7 +132,7 @@ int main(int argc, char** argv) {
 
 	checkArgs(argc, argv, &numPhilosophers);
 	philosophers = (Philosopher**)calloc(numPhilosophers, sizeof(Philosopher*));
-  pthread_mutex_init(&mutex, NULL);
+	pthread_mutex_init(&mutex, NULL);
 	init(philosophers, numPhilosophers);
 	input->philosophers = philosophers;
 	input->size = numPhilosophers;
