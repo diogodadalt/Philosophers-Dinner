@@ -41,7 +41,7 @@ void printPhilosophersState(Input* input) {
 }
 
 void sleepRand() {
-	int sleepTime = random_in_range(1, 10) * 100000;
+	int sleepTime = random_in_range(1, 10) * 1000000;
 	usleep(sleepTime);
 }
 
